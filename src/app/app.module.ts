@@ -4,10 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppMenuComponent } from './app-menu/app-menu.component';
+import { Ng2FileUploadComponent } from './ng2-file-upload/ng2-file-upload.component';
+
+import {FileSelectDirective, FileDropDirective } from 'ng2-file-upload/ng2-file-upload';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppMenuComponent,
+    Ng2FileUploadComponent,
+    FileSelectDirective,
+    FileDropDirective,
+    
   ],
   imports: [
     BrowserModule,
