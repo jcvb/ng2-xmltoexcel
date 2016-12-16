@@ -9,6 +9,9 @@ import { Ng2FileUploadComponent } from './ng2-file-upload/ng2-file-upload.compon
 
 import {FileSelectDirective, FileDropDirective } from 'ng2-file-upload/ng2-file-upload';
 
+import * as spinner from 'ng-spin-kit/app/spinners';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,7 @@ import {FileSelectDirective, FileDropDirective } from 'ng2-file-upload/ng2-file-
     Ng2FileUploadComponent,
     FileSelectDirective,
     FileDropDirective,
-    
+    spinner.ThreeBounceComponent
   ],
   imports: [
     BrowserModule,

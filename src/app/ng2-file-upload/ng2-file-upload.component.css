@@ -21,10 +21,10 @@
   }
   
   #filedrop {
-      background-color: rgb(227, 227, 227);
+      background-color: rgba(158, 158, 158, 0.13);
       padding: 17px;
       text-align: center;
-      border: #eee solid 2px;
+      border: rgba(158, 158, 158, 0.35) 2.8px dotted;
       cursor: default;
   }
   
@@ -42,6 +42,26 @@
   
   .mdl-card__supporting-text {
       width: auto;
+  }
+  
+  #txtupload {
+      display: block;
+      text-align: center;
+      margin: 25px 0 10px;
+  }
+  
+  #txtupload span {
+      display: block;
+      padding: 0 0 20px;
+  }
+  
+  #btnuploader {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
   }
   
   @-webkit-keyframes stripes {

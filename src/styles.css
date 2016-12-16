@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+.three-bounce-spinner {
+    margin: 0 auto !important;
+}
+
+.bounce1,
+.bounce2,
+.bounce3 {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.mdl-data-table {
+    width: 100%;
+}
+
+@media (max-width: 839px) and (min-width: 100px) {
+    #filedrop {
+        display: none;
+    }
+    #txtupload span {
+        display: none !important;
+    }
+    #txtupload {
+        margin-top: 0 !important;
+    }
+    .mdl-card {
+        min-height: auto !important;
+    }
+}
