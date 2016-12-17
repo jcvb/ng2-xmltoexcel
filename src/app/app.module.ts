@@ -8,8 +8,11 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
 import { Ng2FileUploadComponent } from './ng2-file-upload/ng2-file-upload.component';
 
 import {FileSelectDirective, FileDropDirective } from 'ng2-file-upload/ng2-file-upload';
-import * as spinner from 'ng-spin-kit/app/spinners';
 import { AngularFireModule } from 'angularfire2';
+
+import { TruncatePipe } from './truncate-pipe/truncate-pipe';
+
+import * as spinner from 'ng-spin-kit/app/spinners';
 
 // Must export the config
 export const firebaseConfig = {
@@ -26,7 +29,8 @@ export const firebaseConfig = {
     Ng2FileUploadComponent,
     FileSelectDirective,
     FileDropDirective,
-    spinner.ThreeBounceComponent
+    spinner.ThreeBounceComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
