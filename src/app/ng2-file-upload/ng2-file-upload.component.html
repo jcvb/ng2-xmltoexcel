@@ -41,7 +41,7 @@
                             <td class="text-center">
                                 <sk-three-bounce *ngIf="item.isUploading"></sk-three-bounce>
                                 <i title="No se ha subido" class="material-icons" *ngIf="!item.isUploading && !item.isReady && !item.isSuccess">cloud_queue</i>
-                                <span *ngIf="item.isSuccess" title="Se ha subido correctamente"><i class="material-icons">cloud_done</i></span>
+                                <span id="itemsuccess" *ngIf="item.isSuccess" title="Se ha subido correctamente"><i class="material-icons">cloud_done</i></span>
                                 <span *ngIf="item.isCancel" title="Se ha cancelado por el usuario"><i class="material-icons">block</i></span>
                                 <span *ngIf="item.isError" title="Ocurrió un error, vuelva a intentar"><i class="material-icons">error</i></span>
                             </td>

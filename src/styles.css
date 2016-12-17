@@ -15,6 +15,10 @@
     width: 100%;
 }
 
+#itemsuccess {
+    color: #009688;
+}
+
 @media (max-width: 839px) and (min-width: 100px) {
     #filedrop {
         display: none;

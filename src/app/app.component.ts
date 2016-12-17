@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'Menú de Opciones';
+  items: FirebaseListObservable<any[]>;
+  constructor(af: AngularFire) {
+    this.items = af.database.list('/');
+  }
 }

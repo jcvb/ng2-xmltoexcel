@@ -8,9 +8,16 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
 import { Ng2FileUploadComponent } from './ng2-file-upload/ng2-file-upload.component';
 
 import {FileSelectDirective, FileDropDirective } from 'ng2-file-upload/ng2-file-upload';
-
 import * as spinner from 'ng-spin-kit/app/spinners';
+import { AngularFireModule } from 'angularfire2';
 
+// Must export the config
+export const firebaseConfig = {
+  apiKey: '<your-key>',
+  authDomain: '<your-project-authdomain>',
+  databaseURL: '<your-database-URL>',
+  storageBucket: '<your-storage-bucket>'
+};
 
 @NgModule({
   declarations: [
@@ -24,7 +31,8 @@ import * as spinner from 'ng-spin-kit/app/spinners';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
