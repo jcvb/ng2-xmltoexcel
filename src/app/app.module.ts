@@ -14,12 +14,14 @@ import { TruncatePipe } from './truncate-pipe/truncate-pipe';
 
 import * as spinner from 'ng-spin-kit/app/spinners';
 
+import { ENV_APIKEY, ENV_AUTHDOMAIN, ENV_DATABASEURL, ENV_STORAGEBUCKET } from './env';
+
 // Must export the config
 export const firebaseConfig = {
-  apiKey: '<your-key>',
-  authDomain: '<your-project-authdomain>',
-  databaseURL: '<your-database-URL>',
-  storageBucket: '<your-storage-bucket>'
+  apiKey: ENV_APIKEY,
+  authDomain: ENV_AUTHDOMAIN,
+  databaseURL: ENV_DATABASEURL,
+  storageBucket: ENV_STORAGEBUCKET
 };
 
 @NgModule({

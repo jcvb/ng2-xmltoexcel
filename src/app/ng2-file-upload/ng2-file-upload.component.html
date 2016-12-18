@@ -13,7 +13,7 @@
                     <span>O puedes usa este botón</span>
                     <label for="btnuploader" class="mdl-button mdl-js-button mdl-button--raised">
                         Subir archivos
-                        <input id="btnuploader" type="file" ng2FileSelect [uploader]="uploader" multiple />
+                        <input id="btnuploader" type="file" ng2FileSelect [uploader]="uploader" multiple accept=".xml"/>
                     </label>
                 </div>
             </div>
@@ -71,6 +71,7 @@
                 <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect" (click)="uploader.clearQueue()" [disabled]="!uploader.queue.length">
                     <i title="Borrar archivo de la lista" class="material-icons">close</i> Borrar todo
                 </button>
+                <button (click)="verdatos()">ver</button>
             </div>
         </div>
     </div>
