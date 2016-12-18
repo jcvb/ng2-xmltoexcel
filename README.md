@@ -3,32 +3,15 @@
 Aplicación en Angular 2 para parsear XML de Facturas a Excel
 
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
+Proyecto creado con  [angular-cli] (https://github.com/angular/angular-cli) version 1.0.0-beta.21.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Instalación de paquetes NPM 
+Ejecute `npm install`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+## Variables  
+Renombre el archivo 'env.example.ts' 'a env.ts' e intruzca los valores de su cuenta en FireBase. 
 
-## Build
+## Servidor de producción
+Ejecute `ng serve` Para iniciar el servidor. Abrá en su navegador `http://localhost:4200/`. La aplicación comenzará automáticamente.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
