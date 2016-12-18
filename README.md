@@ -10,7 +10,7 @@ Proyecto creado con  [angular-cli] (https://github.com/angular/angular-cli) vers
 Ejecute `npm install`
 
 ## Variables  
-Renombre el archivo 'env.example.ts' 'a env.ts' e intruzca los valores de su cuenta en FireBase. 
+Renombre el archivo `env.example.ts` con el nombre `env.ts` e introduzca los valores de su cuenta en FireBase. 
 
 ## Servidor de producción
 Ejecute `ng serve` Para iniciar el servidor. Abrá en su navegador `http://localhost:4200/`. La aplicación comenzará automáticamente.
