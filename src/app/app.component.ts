@@ -8,7 +8,21 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class AppComponent {
   title: string = 'Menú de Opciones';
   items: FirebaseListObservable<any[]>;
-  constructor(af: AngularFire) {
+  image: string = './app/image.jpg';
+
+  constructor(public af: AngularFire) {
     this.items = af.database.list('/');
+   
   }
+
+  login() {
+    this.af.auth.login();
+  }
+
+  logout() {
+    this.af.auth.logout();
+  }
+
+
+
 }

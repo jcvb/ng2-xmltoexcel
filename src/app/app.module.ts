@@ -8,21 +8,19 @@ import { AppMenuComponent } from './app-menu/app-menu.component';
 import { Ng2FileUploadComponent } from './ng2-file-upload/ng2-file-upload.component';
 
 import {FileSelectDirective, FileDropDirective } from 'ng2-file-upload/ng2-file-upload';
-import { AngularFireModule } from 'angularfire2';
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 
 import { TruncatePipe } from './truncate-pipe/truncate-pipe';
 
 import * as spinner from 'ng-spin-kit/app/spinners';
 
-import { ENV_APIKEY, ENV_AUTHDOMAIN, ENV_DATABASEURL, ENV_STORAGEBUCKET } from './env';
-
 // Must export the config
-export const firebaseConfig = {
-  apiKey: ENV_APIKEY,
-  authDomain: ENV_AUTHDOMAIN,
-  databaseURL: ENV_DATABASEURL,
-  storageBucket: ENV_STORAGEBUCKET
-};
+import { firebaseConfig } from './firebaseconfig';
+
+const myFirebaseAuthConfig = {
+  provider: AuthProviders.Google,
+  method: AuthMethods.Redirect
+}
 
 @NgModule({
   declarations: [
@@ -38,7 +36,7 @@ export const firebaseConfig = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp( firebaseConfig, myFirebaseAuthConfig )
   ],
   providers: [],
   bootstrap: [AppComponent]
