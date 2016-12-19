@@ -27,5 +27,4 @@ export class Ng2FileUploadComponent  {
   verdatos(){
     console.log(this.uploader)
   }
-
 }
