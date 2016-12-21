@@ -3,7 +3,10 @@
 Aplicación en Angular 2 para parsear XML de Facturas a Excel
 
 
-Proyecto creado con  [angular-cli] (https://github.com/angular/angular-cli) version 1.0.0-beta.21.
+Proyecto creado con:
+
+[angular-cli] (https://github.com/angular/angular-cli) versión 1.0.0-beta.21.
+[material-angular] (https://material.angular.io/) versión 2.0.0-alpha.11
 
 
 ## Instalación de paquetes NPM 
